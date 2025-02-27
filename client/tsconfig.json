@@ -1,22 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "es5", // Set the target JavaScript version
-    "lib": ["dom", "dom.iterable", "esnext"], // Include DOM and ESNext libraries
-    "allowJs": true, // Allow JavaScript files to be compiled
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "esModuleInterop": true, // Enable compatibility with ES modules
-    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
-    "strict": true, // Enable all strict type-checking options
-    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
-    "module": "esnext", // Use ES modules
-    "moduleResolution": "node", // Use Node.js-style module resolution
-    "resolveJsonModule": true, // Allow importing JSON files
-    "isolatedModules": true, // Ensure each file can be transpiled independently
-    "noEmit": true, // Do not emit JavaScript files (handled by Create React App)
-    "jsx": "react-jsx",// Use the new JSX transform (React 17+)
-    "paths": {
-      "@/*": ["./*"]
-    } 
-  },
-  "include": ["src"] // Include files in the `src` directory
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
