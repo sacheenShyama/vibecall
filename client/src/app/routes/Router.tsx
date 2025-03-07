@@ -18,15 +18,16 @@ const router = createBrowserRouter([
   },
   {
     element: <ProtectedRoute />,
-    children:[
-        {element: <MainLayout />,
-            children:[
-                {path:'dasboard',element: <Dasbhoard />},
-                {path:'profile',element: <Profile />}
-            ]
-        }
-    ]
-  }
+    children: [
+      {
+        element: <MainLayout />,
+        children: [
+          { path: "dashboard", element: <Dasbhoard /> },
+          { path: "profile", element: <Profile /> },
+        ],
+      },
+    ],
+  },
 ]);
 
 export default router;

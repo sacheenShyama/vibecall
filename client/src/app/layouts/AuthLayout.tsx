@@ -1,9 +1,9 @@
-import React from 'react'
+// import { ModeToggle } from "@/components/mode-toggle";
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-const AuthLayout = () => {
-  return (
-    <div>AuthLayout</div>
-  )
-}
+const AuthLayout: React.FC = () => {
+  return <Outlet />;
+};
 
-export default AuthLayout
+export default AuthLayout;

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import AuthForm from "../components/auth-form";
 
-const Register:React.FC = () => {
+const Register: React.FC = () => {
   return (
-    <div>Register</div>
-  )
-}
+    <div className="container flex items-center justify-center min-h-screen py-12">
+      <AuthForm mode="register" />
+    </div>
+  );
+};
 
-export default Register
+export default Register;
