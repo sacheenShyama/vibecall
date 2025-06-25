@@ -1,11 +1,11 @@
 import React from "react";
 import AuthForm from "../components/auth-form";
-
+import DotGrid from "@/components/parentBackgroud/DotGrid/DotGrid";
 const Login: React.FC = () => {
   return (
-    <div className="container flex items-center justify-center min-h-screen py-12">
-      <AuthForm mode="login" />
-    </div>
+    <>
+      <AuthForm title={"login"} />
+    </>
   );
 };
 

@@ -1,16 +1,25 @@
 import { RouterProvider } from "react-router-dom";
 import "./App.css";
 import router from "./app/routes/Router";
-import { ThemeProvider } from "./components/theme-provider";
-import { ModeToggle } from "./components/mode-toggle";
+import DotGrid from "./components/parentBackgroud/DotGrid/DotGrid";
 
 function App() {
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <ModeToggle />
-        <RouterProvider router={router} />
-      </ThemeProvider>
+      <div style={{ width: "100%", height: "100vh", position: "relative" }}>
+        <DotGrid
+          dotSize={2}
+          gap={15}
+          baseColor="#fff"
+          activeColor="#000"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
+      <RouterProvider router={router} />
     </>
   );
 }
